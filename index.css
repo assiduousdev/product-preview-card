@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Fraunces";
+  src: url("./assets/fonts/Fraunces/static/Fraunces_72pt-Bold.ttf");
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url("./assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+  font-weight: 500 700;
+  font-display: swap;
+}
+
+:root {
+  --ff-serif: "Fraunces", serif;
+  --ff-sans: "Montserrat", sans-serif;
+}
+
+/* === utilities === */
+
+.ff-serif {
+  font-family: var(--ff-serif);
+}
+
+.ff-sans {
+  font-family: var(--ff-sans);
+}
+
+/* === end of utilities === */
