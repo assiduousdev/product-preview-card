@@ -17,7 +17,84 @@
   --ff-sans: "Montserrat", sans-serif;
 }
 
+/* === reset === */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+/* 
+  this ensures that lists without ::marker
+  will still be accessible in Safari
+*/
+ul[role="list"],
+ol[role="list"] {
+  list-style-type: none;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: var(--fw-regular);
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+button {
+  color: inherit;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* === end of reset === */
+
 /* === utilities === */
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap; /* added line */
+  border: 0;
+}
 
 .ff-serif {
   font-family: var(--ff-serif);
